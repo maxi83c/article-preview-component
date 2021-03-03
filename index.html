@@ -3,34 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <article class="card">
+    <div class="card__img-container">
+      <img src="images/drawers.jpg" alt="Photo" class="card__img">
+    </div>
+    <h1 class="card__title">
+      Shift the overall look and feel by adding these wonderful touches to furniture in your home
+    </h1>
+    <p class="card__text">
+      Ever been in a room and felt like something was missing? Perhaps 
+      it felt slightly bare and uninviting. I’ve got some simple tips 
+      to help you make any room feel complete.
+    </p>
+    <form class="card__footer">
+      <input type="checkbox" name="share" id="share" class="share-check">
+      <label for="share" class="share-button"></label>
+      <div class="user">
+        <img src="images/avatar-michelle.jpg" alt="Avatar" class="user__avatar">
+        <h2 class="user__name">Michelle Appleton</h2>
+        <p class="user__date">28 Jun 2020</p>
+      </div>
+      <div class="social">
+        <p class="social__text">Share</p>
+        <button class="social__facebook"></button>
+        <button class="social__twitter"></button>
+        <button class="social__pinterest" type="submit"></button>
+      </div>
+    </form>
+  </article>
+  <footer class="attribution">
+    Challenge by <a href=https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">maxi83c</a>.
+  </footer>
 </body>
 </html>
